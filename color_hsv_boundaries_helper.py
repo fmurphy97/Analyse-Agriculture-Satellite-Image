@@ -69,4 +69,3 @@ while True:
 
 # Close all windows
 cv2.destroyAllWindows()
-
