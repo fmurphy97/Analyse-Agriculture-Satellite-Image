@@ -68,10 +68,7 @@ def create_polygon(image_path):
     # Apply the mask to the original image
     result = cv2.bitwise_and(clone, clone, mask=mask)
 
-    # Display the result
-    plt.imshow(cv2.cvtColor(result, cv2.COLOR_BGR2RGB))
-    plt.axis('off')
-    plt.show()
+    cv2.imwrite("output.png", result)
 
 # Create a Tkinter window to open the file dialog
 root = Tk()
