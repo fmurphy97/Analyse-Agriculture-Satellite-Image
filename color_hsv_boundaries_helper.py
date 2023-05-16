@@ -63,7 +63,7 @@ while True:
     # Display the resulting image
     cv2.imshow('image', result)
 
-    # Check for key press
+    # Check for key press (press q to abort)
     if cv2.waitKey(10) & 0xFF == ord('q'):
         break
 
