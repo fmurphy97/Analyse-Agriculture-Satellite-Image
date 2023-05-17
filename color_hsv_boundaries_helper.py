@@ -56,9 +56,6 @@ while True:
     # Print if there is a change in the HSV values
     if (prev_h_min != h_min) or (prev_s_min != s_min) or (prev_v_min != v_min) \
             or (prev_h_max != h_max) or (prev_s_max != s_max) or (prev_v_max != v_max):
-        print("(Hue Min = %d, Saturation Min = %d, Value Min = %d), "
-              "(Hue Max = %d, Saturation Max = %d, Value Max = %d)" % (
-                  h_min, s_min, v_min, h_max, s_max, v_max))
         prev_h_min = h_min
         prev_s_min = s_min
         prev_v_min = v_min
@@ -71,6 +68,8 @@ while True:
 
     # Check for key press (press q to abort)
     if cv2.waitKey(10) & 0xFF == ord('q'):
+        print(f"(Hue Min = {h_min}, Saturation Min = {s_min}, Value Min = {v_min}), "
+              f"(Hue Max = {h_max}, Saturation Max = {s_max}, Value Max = {v_max})")
         break
 
 # Close all windows
