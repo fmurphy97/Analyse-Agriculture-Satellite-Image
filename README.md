@@ -37,7 +37,7 @@ To run this image filtering algorithm, follow these steps:
 
 1. **Prepare Your Images:** Ensure that your images are ready for processing. We recommend placing them inside the [Images](Images) folder within the project directory.
 
-2. **Execute the File:** Open and execute the [Filter Image](filter_image.ipynb) file. This file contains the necessary code to run the image filtering algorithm.
+2. **Execute the File:** Open and execute the [Filter Image](demo_file.ipynb) file. This file contains the necessary code to run the image filtering algorithm.
 
 3. **Select the Image:** Within the notebook, locate the variable `input_image_path` and modify it to specify the path of the image you want to process. This step allows you to choose the image you want to apply the filtering algorithm to.
 
