@@ -69,11 +69,6 @@ class ImageCropper:
         self.points = np.array(self.points, dtype=np.int32)
         cv2.fillPoly(self.mask, [self.points], (255, 255, 255))
 
-        # Apply the mask to the original image
-        result = cv2.bitwise_and(clone, clone, mask=self.mask)
-
-        cv2.imwrite("output.png", result)
-
     def run(self):
 
         # Create a Tkinter window to open the file dialog
