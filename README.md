@@ -1,5 +1,9 @@
 # Analyse Crop Image
+
+## Introduction
+
 Based on an input satellite image check what percentage is green surface.
+
 The user can select which area to analyse, and based on the colors in the picture analyse where there are crops and where there is an empyt patch.
 
 
@@ -7,6 +11,14 @@ Here we can see an example of a satellite picture where the green surface area i
 
 ![Initial & Final Images](Images/Outputs/first_and_final_images.png)
 
+
+## Motivation
+
+One of the challenges in vegetation indices calculated using drones is the reliance on infrared bands when the optics are based on traditional visible bands. Indices such as NDVI or SAVI require near-infrared operation, making it difficult to compute indices in the absence of specific sensors.
+
+I developed an approach using the HSV (Hue, Saturation, Value) color model to perform vegetation analysis. By isolating the green color, this code enables the identification and assessment of vegetation without relying on infrared data. This method allows vegetation analysis using existing drone imagery.
+
+While other methods like the Green-Red Vegetation Index (GRVI) are available, I found it fascinating to explore a different avenue for vegetation assessment and monitoring.
 
 
 ## How It Works
