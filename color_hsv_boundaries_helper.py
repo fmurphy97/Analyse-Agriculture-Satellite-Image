@@ -1,13 +1,19 @@
 import cv2
 import numpy as np
+from tkinter import filedialog
 
 
 def trackbar_callback(x):
     pass
 
 
+image_path = None
+if image_path is None:
+    # Open the file dialog to select the image
+    image_path = filedialog.askopenfilename()
+
 # Load the image
-image = cv2.imread("Images/sample_img_1.png")
+image = cv2.imread(image_path)
 
 # Create a window to display the image
 cv2.namedWindow('image')
