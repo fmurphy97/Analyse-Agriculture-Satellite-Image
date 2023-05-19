@@ -68,8 +68,7 @@ while True:
 
     # Check for key press (press q to abort)
     if cv2.waitKey(10) & 0xFF == ord('q'):
-        print(f"(Hue Min = {h_min}, Saturation Min = {s_min}, Value Min = {v_min}), "
-              f"(Hue Max = {h_max}, Saturation Max = {s_max}, Value Max = {v_max})")
+        print(f"[({h_min}, {s_min}, {v_min}), ({h_max}, {s_max}, {v_max})]")
         break
 
 # Close all windows
