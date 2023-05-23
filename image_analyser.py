@@ -20,8 +20,6 @@ class ImageAnalyser:
 
         self.color_ratio = 0.0  # ratio of pixels that have the selected color and are in the selected range
 
-        self.analyse_img()
-
     def create_color_mask(self):
         """Based on HSV color ranges creates an image mask"""
         hsv = cv2.cvtColor(self.img, cv2.COLOR_BGR2HSV)
